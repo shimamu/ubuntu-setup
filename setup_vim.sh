@@ -15,7 +15,6 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 git clone https://github.com/shimamu/vim-dotfiles.git ${CONF_DIR}/vim-dotfiles
 cd ${CONF_DIR}/vim-dotfiles
 bash setup.sh
-mkdir ~/.vim/tmp
-touch ~/.vim/abbreviate.vim
 git clone https://github.com/shimamu/vim-colors.git ${CONF_DIR}/vim-colors
-cp -r ${CONF_DIR}/vim-colors/colors ~/.vim
+cd ${CONF_DIR}/vim-colors
+bash setup.sh
