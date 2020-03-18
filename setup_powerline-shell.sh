@@ -10,8 +10,8 @@ EOL
 
 # Powerline-shell
 sudo apt update
-sudo apt install -y python-pip subversion
-pip install --user powerline-shell
+sudo apt install -y python3-pip subversion
+pip3 install --user powerline-shell
 svn export https://github.com/ryanoasis/nerd-fonts/trunk/patched-fonts/UbuntuMono ~/.fonts/UbuntuMono
 cat << 'EOL' >> ~/.bashrc
 
