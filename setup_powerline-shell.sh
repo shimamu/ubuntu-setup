@@ -6,10 +6,14 @@ cat << EOL
 --------------------------------------------------
 EOL
 
+# Common library
+# ==============================================================================
 . ./common.sh
 
-# Powerline-shell
-sudo apt update
+
+# Process
+# ==============================================================================
+apt_update_only_first_time
 sudo apt install -y python3-pip subversion
 pip3 install --user powerline-shell
 svn export https://github.com/ryanoasis/nerd-fonts/trunk/patched-fonts/UbuntuMono ~/.fonts/UbuntuMono

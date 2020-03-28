@@ -2,8 +2,10 @@
 
 . ./common.sh
 
-bash -x setup_upgrade.sh
-bash -x setup_git.sh
-bash -x setup_vim.sh
-bash -x setup_tmux.sh
-bash -x setup_powerline-shell.sh
+. ./setup_upgrade.sh
+. ./setup_lang.sh
+. ./setup_git.sh
+. ./setup_vim.sh
+. ./setup_tmux.sh
+. ./setup_powerline-shell.sh
+

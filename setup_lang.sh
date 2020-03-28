@@ -2,7 +2,7 @@
 
 cat << EOL
 --------------------------------------------------
-  setup upgrade
+  setup language
 --------------------------------------------------
 EOL
 
@@ -14,5 +14,6 @@ EOL
 # Process
 # ==============================================================================
 apt_update_only_first_time
-sudo apt upgrade -y
+sudo apt install $(check-language-support)
+LANG=C xdg-user-dirs-gtk-update
 

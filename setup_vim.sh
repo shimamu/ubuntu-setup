@@ -6,10 +6,14 @@ cat << EOL
 --------------------------------------------------
 EOL
 
+# Common library
+# ==============================================================================
 . ./common.sh
 
-#vim
-sudo apt update
+
+# Process
+# ==============================================================================
+apt_update_only_first_time
 sudo apt install -y vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 git clone https://github.com/shimamu/vim-dotfiles.git ${CONF_DIR}/vim-dotfiles
