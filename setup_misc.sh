@@ -14,7 +14,7 @@ EOL
 # Process
 # ==============================================================================
 apt_update_only_first_time
-sudo apt install -y gimp, vifm
+sudo apt install -y gimp vifm
 
 # for chrome
 cat << EOL
