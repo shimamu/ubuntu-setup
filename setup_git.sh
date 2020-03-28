@@ -18,5 +18,5 @@ sudo apt install -y git
 cat << 'EOL' >> ~/.bashrc
 
 # git
-echo 'export EDITOR=vi'
+export EDITOR=vi
 EOL
