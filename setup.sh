@@ -8,4 +8,6 @@
 . ./setup_vim.sh
 . ./setup_tmux.sh
 . ./setup_powerline-shell.sh
-
+. ./setup_urxvt.sh
+. ./setup_xmonad.sh
+. ./setup_misc.sh
