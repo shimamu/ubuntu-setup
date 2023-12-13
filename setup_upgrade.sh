@@ -13,6 +13,6 @@ EOL
 
 # Process
 # ==============================================================================
-apt_update_only_first_time
+echo "---- install pkg ----"
 sudo apt upgrade -y
 

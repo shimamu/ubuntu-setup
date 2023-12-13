@@ -13,7 +13,7 @@ EOL
 
 # Process
 # ==============================================================================
-apt_update_only_first_time
-sudo apt install $(check-language-support)
+echo "---- install pkg ----"
+sudo apt install -y $(check-language-support)
 LANG=C xdg-user-dirs-gtk-update
 

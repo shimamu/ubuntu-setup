@@ -2,7 +2,7 @@
 
 cat << EOL
 --------------------------------------------------
-  setup git
+  setup Monokai Colorscheme for Gnome Terminal
 --------------------------------------------------
 EOL
 
@@ -14,11 +14,12 @@ EOL
 # Process
 # ==============================================================================
 echo "---- install pkg ----"
-sudo apt install -y git
+sudo apt-get install -y dconf-cli
 
-echo "---- add config ----"
-cat << 'EOL' >> ~/.bashrc
+echo "---- download theme ----"
+git clone https://github.com/0xComposure/monokai-gnome-terminal ${BUILD_DIR}/monokai-gnome-terminal
 
-# git
-export EDITOR=vi
-EOL
+echo "---- install theme ----"
+pushd ${BUILD_DIR}/monokai-gnome-terminal
+./install.sh
+popd

@@ -13,8 +13,8 @@ EOL
 
 # Process
 # ==============================================================================
-apt_update_only_first_time
-sudo apt install -y gimp vifm
+echo "---- install pkg ----"
+sudo apt install -y gimp vifm mcomix vlc rar unrar
 
 # for chrome
 cat << EOL

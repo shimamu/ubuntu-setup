@@ -2,7 +2,7 @@
 
 cat << EOL
 --------------------------------------------------
-  setup git
+  setup Gnome Shell Extensions
 --------------------------------------------------
 EOL
 
@@ -14,11 +14,7 @@ EOL
 # Process
 # ==============================================================================
 echo "---- install pkg ----"
-sudo apt install -y git
+sudo apt-get install -y gnome-tweaks gnome-shell-extensions
 
-echo "---- add config ----"
-cat << 'EOL' >> ~/.bashrc
-
-# git
-export EDITOR=vi
-EOL
+# Set extensions from browser
+#   - Forge

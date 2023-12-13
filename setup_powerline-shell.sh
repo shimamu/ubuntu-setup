@@ -13,13 +13,17 @@ EOL
 
 # Process
 # ==============================================================================
-apt_update_only_first_time
-sudo apt install powerline fonts-powerline
-git clone https://github.com/powerline/fonts.git --depth=1
-cd fonts
-./install.sh
-cd .. && rm -rf fonts
+echo "---- install pkg ----"
+sudo apt install -y powerline fonts-powerline
 
+echo "---- install fonts ----"
+git clone https://github.com/powerline/fonts.git --depth=1
+pushd fonts
+./install.sh
+popd
+rm -rf fonts
+
+echo "---- add config ----"
 cat << 'EOL' >> ~/.bashrc
 
 # Powerline

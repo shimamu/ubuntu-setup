@@ -2,7 +2,7 @@
 
 cat << EOL
 --------------------------------------------------
-  setup git
+  setup Barrier
 --------------------------------------------------
 EOL
 
@@ -14,11 +14,6 @@ EOL
 # Process
 # ==============================================================================
 echo "---- install pkg ----"
-sudo apt install -y git
-
-echo "---- add config ----"
-cat << 'EOL' >> ~/.bashrc
-
-# git
-export EDITOR=vi
-EOL
+sudo apt install -y flatpak gnome-software-plugin-flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo apt install -y barrier
