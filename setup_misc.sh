@@ -14,7 +14,7 @@ EOL
 # Process
 # ==============================================================================
 echo "---- install pkg ----"
-sudo apt install -y gimp vifm mcomix vlc rar unrar
+sudo apt install -y gimp vifm mcomix vlc rar unrar ffmpeg
 
 # for chrome
 cat << EOL
