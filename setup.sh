@@ -13,6 +13,8 @@
 . ./setup_tela_circle_icon_theme.sh
 . ./setup_barrier.sh
 . ./setup_gnome_shell_extensions.sh
+. ./setup_marp.sh
+. ./setup_auth.sh
 #. ./setup_urxvt.sh
 #. ./setup_xmonad.sh
 . ./setup_misc.sh
